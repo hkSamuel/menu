@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(57, 223, 57);
+    margin-bottom: 10px;
+}
+
+.hi{
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 500px;
+    border: solid white;
+    animation-name: borderx;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(57, 223, 57);
+}
+.all-scroll {
+    cursor: all-scroll;
+}
+
+.animation{
+    color: rgb(255, 255, 255);
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+    0%   {color:rgb(0, 0, 0)}
+    50%  {color:rgb(57, 233, 57);}
+    100% {color:rgb(0, 0, 0);}
+  }
+
+
+
+@keyframes borderx {
+    0%   {border: black;}
+    50%  {border: white;}
+    100% {border: black;}
+}
